@@ -1,8 +1,14 @@
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>GSSI - Repository Explorer - Models Analyzer</title>
+  </head>
 <body>
-  <div class="container" id="main-wrapper">
+  <div class="container" id="header">
     <nav class="navbar navbar-default custom-navbar dark-theme box-shadow">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -40,7 +46,7 @@
       </div>
     </nav>
   </div>
-  <div class="jumbotron" id="repo"></div>
+  <div id="repo"></div>
   <div id="quality-popup" class="dark-theme box-shadow"></div>
   <script src="https://cdn.jsdelivr.net/npm/d3@3.5.17"></script>
   <script type="module" src="./graph.js"></script>

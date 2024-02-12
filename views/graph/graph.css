@@ -21,6 +21,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  #repo{
+    width: 100%;
+    height: 100%;
+  }
+
   .box-shadow {
     box-shadow: 0 0 5px rgb(0 0 0 / 30%);
     border: none !important;
@@ -191,7 +196,7 @@
   }
 
   /* OVERLAY NAVBAR */
-  #main-wrapper {
+  #header {
     position: absolute;
     top: 0;
     left: 50%;
@@ -369,7 +374,7 @@
   }
 
   @media (max-width: 767px) {
-    #main-wrapper {
+    #header {
       width: 100%;
     }
 

@@ -1,13 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repository Explorer - Models Analyzer - Graph</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/views/graph/main.js"></script>
-  </body>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" id="main-wrapper">
+    <nav class="navbar navbar-default custom-navbar dark-theme box-shadow">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Repository Explorer</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="select-activelayer" data-layerid="A::A">Reset</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Model <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="select-activelayer" data-layerid="Model::Coverage">Coverage</a></li>
+                <li><a href="#" class="select-activelayer" data-layerid="Model::Complexity">Complexity</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Metamodel <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="select-activelayer"
+                    data-layerid="Metamodel::Understandability">Understandability</a></li>
+                <li><a href="#" class="select-activelayer" data-layerid="Metamodel::Complexity">Complexity</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="jumbotron" id="repo"></div>
+  <div id="quality-popup" class="dark-theme box-shadow"></div>
+  <script src="https://cdn.jsdelivr.net/npm/d3@3.5.17"></script>
+  <script type="module" src="views/graph/graph.js"></script>
+</body>
+
 </html>

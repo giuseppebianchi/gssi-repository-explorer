@@ -1,5 +1,6 @@
 {
   "name": "repository-explorer",
+  "homepage": "https://giuseppebianchi.github.io/gssi-repository-explorer/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,7 +10,11 @@
     "preview": "vite preview",
     "deploy": "vite build && vite preview"
   },
+  "dependencies": {
+    "bootstrap": "3.3.4"
+  },
   "devDependencies": {
+    "dotenv": "^16.4.3",
     "vite": "^5.0.8"
   }
 }

@@ -75,7 +75,7 @@ let margin = {
   top: 100,
   right: 70 /*+ data[data.length-1].info.length*4*/,
   bottom: xLabelsSize,
-  left: 40 + data[0].info.length * 4,
+  left: 40 + (data[0]?.info.length * 4 || 0),
 };
 let width = 30 * data.length; //window.innerWidth - margin.left - margin.right,
 //height = window.innerHeight - document.getElementById("barchart").offsetTop - margin.top - (xLabelsSize < 250 ? margin.bottom : 0);
@@ -264,7 +264,7 @@ document.querySelectorAll(".select-activelayer").forEach((item) =>
       top: 100,
       right: 70,
       bottom: getLongestWordSize(data) * 7,
-      left: 40 + data[0].info.length * 4,
+      left: 40 + (data[0]?.info.length * 4 || 0),
     };
     height =
       xLabelsSize > window.innerHeight / 2

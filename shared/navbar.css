@@ -1,0 +1,89 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+.custom-navbar {
+  box-shadow: none;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.custom-navbar.dark-theme {
+  background: var(--dark);
+}
+
+.custom-navbar .navbar-collapse {
+  border: none;
+}
+
+.custom-navbar.dark-theme.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.custom-navbar .dropdown .dropdown-toggle {
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: none;
+  background: none;
+  transition: 0.5s;
+  margin: 5px 5px 0;
+}
+
+.custom-navbar .navbar-nav > li > a {
+  font-size: 16px;
+}
+
+.custom-navbar.dark-theme .navbar-nav > li > a {
+  color: #fff;
+}
+
+.custom-navbar .dropdown .dropdown-toggle:hover,
+.custom-navbar .dropdown.open .dropdown-toggle {
+  background: #ededed;
+}
+
+.custom-navbar.dark-theme .dropdown .dropdown-toggle:hover,
+.custom-navbar.dark-theme .dropdown.open .dropdown-toggle {
+  background: var(--dark-2);
+  color: #fff;
+}
+
+.custom-navbar .dropdown-menu {
+  background: var(--dark);
+}
+
+.custom-navbar .dropdown-menu > li {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.custom-navbar .dropdown-menu > li > a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.custom-navbar.dark-theme .dropdown-menu > li > a {
+  color: #fff;
+}
+
+.custom-navbar .dropdown-menu > li > a:hover,
+.custom-navbar .dropdown-menu > li > a:focus {
+  /*background: #ededed;*/
+  background: var(--green);
+  color: #fff;
+}
+
+.custom-navbar .navbar-nav > li > .dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* OVERLAY NAVBAR */
+#header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}

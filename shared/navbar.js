@@ -1,8 +1,10 @@
+import "./navbar.css";
+
 document
   .querySelectorAll(".nav.navbar-nav li.dropdown .dropdown-toggle")
   .forEach((el, i, drops) => {
     el.addEventListener("click", function (e) {
-      e.preventDefault()
+      e.preventDefault();
       if (e.target.offsetParent.classList.contains("open")) {
         e.target.offsetParent.classList.remove("open");
       } else {

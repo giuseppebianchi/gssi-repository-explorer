@@ -1,0 +1,112 @@
+#navbar-details{
+    position: absolute;
+    top: 2.5rem;
+    left: 350px;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    background: #efefef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#navbar-details.full-width{
+    right: 2.5rem;
+    justify-content: space-between;
+}
+#navbar-details.dark-theme{
+    background: var(--dark);
+    color: #fff;
+}
+#navbar-details .navbar-item{
+    padding: 0 2.5rem;
+}
+#navbar-details .navbar-item .navbar-item-label{
+    font-weight: 800
+}
+#card-details{
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    bottom: 2.5rem;
+    max-width: 300px;
+    width: 300px;
+    padding: 2.5rem;
+    background: #efefef;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#card-details.dark-theme{
+    background: var(--dark);
+    color: #fff;
+}
+#card-details h1{
+    font-size: 2rem;
+    margin: 1rem 0 2.5rem;
+}
+#card-details h2{
+    font-size: 2rem;
+}
+#card-details ul{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin: 2rem 0px;
+}
+#card-details ul li{
+    list-style: none;
+    margin: 1rem 0;
+}
+#card-details ul.quality-properties li{
+    padding: 1rem 0;
+    position: relative;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+#card-details ul.quality-properties li .quality-label{
+    padding: 5px 10px;
+    position: absolute;
+    top: 105px;
+    left: 60px;
+    right: 0;
+}
+#card-details ul.quality-properties li .quality-label.quality-label-bg{
+    background: rgb(255 255 255 / 20%);
+    border-radius: 5px;
+    left: 89px;
+    top: 95px;
+    bottom: 15px;
+}
+.gauge g.arc {
+    fill: steelblue;
+}
+
+.gauge g.pointer {
+    /*fill: #e85116;
+    stroke: #b64011;*/
+    fill: #404040;
+    stroke: var(--dark-2);
+}
+
+.gauge g.label text {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: bold;
+    fill: #cdcdcd;
+}
+@media (max-width: 767px){
+	#main-wrapper{
+		width: 100%;
+	}
+	.custom-navbar .navbar-nav>li>.dropdown-menu{
+		border-radius: 0;
+		background: var(--dark-2);
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li >a{
+		color: #fefefe;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li:hover >a{
+		color: #fff;
+		background: var(--green)
+	}
+}

@@ -1,42 +1,3 @@
-:root {
-  --blue: #60a5fa;
-  --green: #6ee7b7;
-  --red: #ef4444;
-  --dark: #4b5563;
-  --dark-2: #1f2937;
-}
-body,
-html {
-  height: 100%;
-  width: 100%;
-}
-* {
-  outline: none;
-  margin: 0;
-  padding: 0;
-  text-shadow: none !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#repo {
-  width: 100%;
-  height: 100%;
-}
-
-.box-shadow {
-  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
-  border: none !important;
-}
-
-.svg-content-responsive {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .link {
   fill: none;
   stroke: #666;
@@ -61,7 +22,7 @@ html {
 
 .node.Metamodel circle {
   /*fill: black;
-  fill: #00000029;*/
+    fill: #00000029;*/
   fill: var(--red);
   stroke: #fff;
   stroke-width: 1.5px;
@@ -98,59 +59,11 @@ text {
   font-size: 12px;
   /*text-anchor: middle;*/
 }
-
 .node-label-bg {
   fill: #efefef;
   /*stroke: #ccc;
-    stroke-width: 1;*/
+      stroke-width: 1;*/
 }
-
-.jumbotron {
-  background-color: #ffffff;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-div.tooltip {
-  /*
-    width: 500px;
-    height: 15px;
-    padding: 8px;
-    font: 10px sans-serif;
-    background: lightgray;
-    border: solid 1px #ccc;
-    */
-  position: absolute;
-  text-align: center;
-  border-radius: 10px;
-  pointer-events: none;
-  padding: 10px 20px;
-  font: 14px sans-serif;
-  background: #fff;
-  border: solid 1px #ededed;
-}
-
-div.tooltip h3 {
-  margin: 10px 0;
-}
-
-.tooltip.custom-tooltip {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  /*font-size: 1.5em;*/
-  background: var(--dark);
-  color: #fff;
-  min-width: 250px;
-}
-
-.tooltip-attr-list {
-  padding-inline-start: 20px;
-  text-align: left;
-  line-height: 1.5em;
-}
-
 #quality-popup {
   position: absolute;
   bottom: 7rem;
@@ -314,6 +227,17 @@ div.tooltip h3 {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+}
+
+.tooltip.custom-tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*font-size: 1.5em;*/
+  background: var(--dark);
+  color: #fff;
+  min-width: 250px;
 }
 
 @media (max-width: 767px) {

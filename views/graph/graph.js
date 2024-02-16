@@ -1,8 +1,10 @@
-import "./graph.css";
-import "/shared/navbar.js";
+import "/shared/navbar";
 import { ecosystem, links, nodes } from "./data";
 
-const container = document.getElementById("main-wrapper"),
+import "/shared/main.css"
+import "./graph.css";
+
+const container = document.getElementById("header"),
   repo = document.getElementById("repo");
 
 const MIN_LINK_DISTANCE = 200,

@@ -62,19 +62,3 @@ div.tooltip p {
 .active-label {
   font-weight: 800;
 }
-@media (max-width: 767px) {
-  #main-wrapper {
-    width: 100%;
-  }
-  .custom-navbar .navbar-nav > li > .dropdown-menu {
-    border-radius: 0;
-    background: var(--dark-2);
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #fefefe;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
-    color: #fff;
-    background: var(--green);
-  }
-}

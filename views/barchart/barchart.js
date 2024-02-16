@@ -1,7 +1,8 @@
-import "/shared/navbar.js";
+import "/shared/navbar";
 import { links, nodes } from "./data";
 import * as d3 from "d3";
 
+import '/shared/main.css'
 import "./barchart.css";
 
 let MAX_VALUE,

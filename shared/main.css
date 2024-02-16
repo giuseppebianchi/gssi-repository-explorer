@@ -1,0 +1,93 @@
+:root {
+  --blue: #60a5fa;
+  --green: #6ee7b7;
+  --red: #ef4444;
+  --dark: #4b5563;
+  --dark-2: #1f2937;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-shadow: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.box-shadow {
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+  border: none !important;
+}
+
+.svg-content-responsive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#repo {
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+div.tooltip {
+  /*
+      width: 500px;
+      height: 15px;
+      padding: 8px;
+      font: 10px sans-serif;
+      background: lightgray;
+      border: solid 1px #ccc;
+      */
+  position: absolute;
+  text-align: center;
+  border-radius: 10px;
+  pointer-events: none;
+  padding: 10px 20px;
+  font: 14px sans-serif;
+  background: #fff;
+  border: solid 1px #ededed;
+}
+
+div.tooltip h3 {
+  margin: 10px 0;
+}
+
+.tooltip-attr-list {
+  padding-inline-start: 20px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+@media (max-width: 767px) {
+  #header {
+    width: 100%;
+  }
+
+  .custom-navbar .navbar-nav > li > .dropdown-menu {
+    border-radius: 0;
+    background: var(--dark-2);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fefefe;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
+    color: #fff;
+    background: var(--green);
+  }
+}
